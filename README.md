@@ -30,9 +30,10 @@ This project is an automated testing framework for the Daraz.pk website using Se
 3. **Open the project in your IDE.**
 
 4. **Update the path to ChromeDriver in src/test/java/testCases/TestCases.java:**
+   ```bash
    System.setProperty("webdriver.chrome.driver", "path/to/your/chromedriver");
 
-5. **Run The TestCase**
+6. **Run The TestCase**
 
 
 
