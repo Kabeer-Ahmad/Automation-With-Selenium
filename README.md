@@ -3,22 +3,6 @@ Selenium project for automated testing of Daraz.pk website using Java and Chrome
 
 This project is an automated testing framework for the Daraz.pk website using Selenium and Java. The tests include searching for products, filtering by brand and price range, and verifying if free shipping is available.
 
-## Project Structure
-Project1/
-├── src/
-│ ├── main/
-│ │ └── java/
-│ │ └── pageObjects/
-│ │ ├── HomePage.java
-│ │ └── SearchResultsPage.java
-│ └── test/
-│ └── java/
-│ └── testCases/
-│ └── TestCases.java
-├── pom.xml
-└── README.md
-
-
 ### Description of Files
 
 - **`src/main/java/pageObjects/HomePage.java`**: Page Object Model class for the home page.
