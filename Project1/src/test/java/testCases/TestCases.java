@@ -2,19 +2,16 @@ package testCases;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 import pageObjects.HomePage;
 import pageObjects.SearchResultsPage;
 
 public class TestCases {
     WebDriver driver;
 
-    public static void main(String[] args) throws InterruptedException {
-        TestCases test = new TestCases();
-        test.setUp();
-        test.testSearchAndFilter();
-        test.tearDown();
-    }
-
+    @BeforeClass
     public void setUp() {
         // Set the path to your ChromeDriver executable
         System.setProperty("webdriver.chrome.driver", "D:\\chromedriver-win64\\chromedriver.exe");
@@ -23,6 +20,7 @@ public class TestCases {
         driver.get("https://www.daraz.pk/");
     }
 
+    @Test
     public void testSearchAndFilter() throws InterruptedException {
         HomePage homePage = new HomePage(driver);
         homePage.searchForItem("electronics");
@@ -59,6 +57,7 @@ public class TestCases {
         Thread.sleep(5000); // Wait for 5 seconds
     }
 
+    @AfterClass
     public void tearDown() {
         driver.quit();
     }
