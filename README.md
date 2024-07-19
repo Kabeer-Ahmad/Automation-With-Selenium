@@ -35,5 +35,7 @@ This project is an automated testing framework for the Daraz.pk website using Se
 
 6. **Run The TestCase**
 
+## ScreenShot:
+![image](https://github.com/user-attachments/assets/45aa2b9e-5560-40ef-9516-a473db517315)
 
 
